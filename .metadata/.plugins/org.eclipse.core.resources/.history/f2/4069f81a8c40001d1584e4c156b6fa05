@@ -1,0 +1,49 @@
+package collectionFrameworkExam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExam01 {
+
+	public static void main(String[] args) {
+
+		
+//	  List<Integer> list1 = new ArrayList<Integer>();
+	  List<Integer> list1 = new ArrayList<>();	  
+	  ArrayList<Integer> List2 = new ArrayList<Integer>();
+	
+	
+	  list1.add(89);
+	  list1.add(2);
+	  list1.add(95);
+	  list1.add(83);
+	
+	
+	  System.out.println(list1);
+	  System.out.println(list1.size());
+	  list1.remove(2);
+	  System.out.println(list1);
+	  System.out.println(list1.size());
+	  list1.add(100);
+	  System.out.println(list1);
+	  System.out.println(list1.size());
+	 
+	  
+	  list1.add(3,5);
+	  System.out.println(list1);
+	  System.out.println(list1.size());
+	  
+	  List<String> list3 = new ArrayList<String>();
+	  list3.add("홍길동");
+	  list3.add("김자바");
+	  list3.add("박자바");
+	  list3.add("이하늘");
+	  System.out.println(list3);
+	  
+	  for (int i = 0; i < list3.size(); i++) {
+		System.out.println(list.get(i));
+	}
+	  
+	}
+
+}

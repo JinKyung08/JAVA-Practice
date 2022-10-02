@@ -1,0 +1,9 @@
+package classGetterSetterExam;
+
+public class WeightControlMainUpdate {
+
+	public static void main(String[] args) {
+
+	}
+
+}

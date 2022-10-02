@@ -1,0 +1,16 @@
+package interfaceExam;
+
+public class CarInterfaceTest1 implements InterfaceTest1 {
+
+	@Override
+	public void showInfo() {
+		System.out.println("자동차의 최대 속력 : " + MAX);
+		System.out.println();
+	}
+
+	@Override
+	public void contentShow() {
+		System.out.println("자동차의 최소 속력 : " + MIN);
+	}
+
+}

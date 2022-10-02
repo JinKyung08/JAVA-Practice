@@ -1,0 +1,11 @@
+package abstractExam;
+
+public class Bird extends CountableParents {
+	//필드
+	public String name;
+	public int num;
+	
+	//생성자
+	public Tree (String name, int num) {
+		super(name,num);
+}

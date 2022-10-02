@@ -1,0 +1,43 @@
+package collectionFrameworkExam;
+
+import java.util.HashSet;
+
+public class StudentHashSetMain {
+
+	public static void main(String[] args) {
+		//set : 순서가 중요하지 않다. 단 중복은 허용하지 않는다.
+		// 		입력 순서대로 출력되는 것은 아니다
+		// 		중복을 체크 : hashCode, equals
+		
+//		Set<Student> set = new HashSet<Student>();
+		HashSet<Student> set = new HashSet<Student>();
+		
+		set.add(new Student("홍길동",20));
+		set.add(new Student("박자바",32));
+		set.add(new Student("홍길동",20));
+		set.add(new Student("이하늘",28));
+		
+		System.out.println(set);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

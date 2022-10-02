@@ -1,0 +1,26 @@
+package collectionFrameworkExam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExam01 {
+
+	public static void main(String[] args) {
+
+		
+//	  List<Integer> list1 = new ArrayList<Integer>();
+	  List<Integer> list1 = new ArrayList();	  
+	  ArrayList<Integer> List2 = new ArrayList<Integer>();
+	
+	
+	  List1.add(89);
+	  List1.add(2);
+	  List1.add(95);
+	  List1.add(83);
+	
+	
+	  System.out.println(List1);
+	
+	}
+
+}

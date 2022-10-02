@@ -1,0 +1,20 @@
+package inheritanceExam;
+
+public class Dog {
+	String eye;
+	String mouth;
+	String name;
+	public void eat() {
+		
+	}
+	public void sleep() {
+		
+	}
+	
+	public void cry() {
+		System.out.println("강아지는 멍멍 짓는다.");
+	}
+	public void running() {
+		System.out.println("강아지는 달린다.");
+	}
+}

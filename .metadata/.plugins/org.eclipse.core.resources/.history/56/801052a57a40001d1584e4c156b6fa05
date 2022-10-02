@@ -1,0 +1,33 @@
+package scoreExam;
+
+public class MainScore {
+
+		public static <T extends Comparable> T findBest(T[] arr) {
+			T max = arr[0];
+			
+			for (int i = 0; i < arr.length; i++) {
+				if(max.compareTo(arr[i])<0) {
+					max =arr[i];
+				}
+				
+			}
+			return max;
+		}
+		
+	public static void main(String[] args) {
+		
+		//객체생성
+		EnglishScore[] engScore = { new EnglishScore("홍길동", 70), new EnglishScore("우영우", 95),
+				new EnglishScore("정명석", 50), new EnglishScore("정우성", 70) };
+		MathScore[] matScore = { new MathScore("홍길동", 90), new MathScore("우영우", 45), new MathScore("정명석", 70),
+				new MathScore("정우성", 89) };
+		
+		
+			System.out.println("영어 최고 점수 = " + findBest(engScore));
+			System.out.println("수학 최고 점수 = " + findBest(matScore));
+		
+		
+		
+	}
+
+}

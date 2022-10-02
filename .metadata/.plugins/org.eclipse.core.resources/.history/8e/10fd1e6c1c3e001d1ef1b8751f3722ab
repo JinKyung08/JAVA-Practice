@@ -1,0 +1,10 @@
+package inheritanceExam;
+
+public class Dog extends Animal02 {
+	
+	
+	
+	public void running() {
+		System.out.println("강아지는 달린다.");
+	}
+}

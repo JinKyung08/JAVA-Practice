@@ -1,0 +1,5 @@
+package interfaceExam;
+
+public interface Animal extends Animal2 {
+	void cry(); // public abstract void cry();
+}

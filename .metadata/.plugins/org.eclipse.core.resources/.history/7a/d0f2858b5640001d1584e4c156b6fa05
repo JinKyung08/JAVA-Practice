@@ -1,0 +1,24 @@
+package hashcodeAndEquals;
+
+public class Student {
+		String name;
+		int ssn;
+		
+		
+		public Student(String name, int ssn) {
+			super();
+			this.name = name;
+			this.ssn = ssn;
+		}
+		
+		@Override
+		public String toString() {
+			String result =  "이름은" + name ;
+			result += "\n학번은" + ssn
+			return name + "," + ssn;
+		}
+		
+		
+		
+		
+} // end of class

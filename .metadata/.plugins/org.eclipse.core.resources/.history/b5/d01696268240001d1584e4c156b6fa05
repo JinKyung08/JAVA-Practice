@@ -1,0 +1,5 @@
+package lambdaExam;
+
+public interface LambdaInterface1 {
+
+}

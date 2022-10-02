@@ -1,0 +1,38 @@
+package arrayExam;
+
+class CoffeeCount {
+	String name; //인스턴스 필드
+	public CoffeeCount() {}
+
+//	public CoffeeCount(String n) {     //틀리지 않지만 권하진 않음
+//		name = n;
+//	}
+	
+//	public CoffeeCount(String name) {    //지역변수
+//		this.name = name;  // this => 이 객체 
+//	}
+	
+	
+	
+}	
+public class CoffeeCountMain {
+	public static void main(String[] args) {
+		CoffeeCount aa = new CoffeeCount();
+		CoffeeCount coffee1 = new CoffeeCount("커피");
+		CoffeeCount coke = new CoffeeCount("콜라");
+		CoffeeCount latte = new CoffeeCount("라뗴");
+		CoffeeCount coffee2 = new CoffeeCount("coffee");
+		CoffeeCount tea = new CoffeeCount("홍차");
+		CoffeeCount coffee3= new CoffeeCount("coffee");
+		
+		
+		System.out.println("전체 음료 주문건 : " + CoffeeCount.allCount);
+		CoffeeCount.getAllCount();
+		System.out.println("커피 주문 건" + CoffeeCount.coffeeCount);
+		coffeeCount.getCoffeeCount();
+		
+		
+
+	}
+
+}

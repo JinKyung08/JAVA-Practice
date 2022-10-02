@@ -1,0 +1,36 @@
+package interfaceExam;
+
+public class CarInterfaceMain {
+
+	public static void main(String[] args) {
+			CarInterfaceTest1 cit = new CarInterfaceTest1();
+			
+			cit.showInfo();
+			cit.contentShow();
+			
+			
+			//익명 이너 구현 객체
+			
+			InterfaceTest1 inter = new InterfaceTest1() {
+				
+				@Override
+				public void showInfo() {
+					System.out.println("익명 구현 객체의 메서드1");
+				}
+				
+				@Override
+				public void contentShow() {
+					System.out.println("익명 구현 객체의 메서드2");
+				}
+			};
+			
+			inter.contentShow();
+			inter.showInfo();
+	
+	
+	
+	}
+	
+	
+
+}

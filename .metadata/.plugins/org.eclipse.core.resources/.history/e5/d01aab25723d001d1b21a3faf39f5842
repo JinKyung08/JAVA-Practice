@@ -1,0 +1,38 @@
+package arrayExam;
+class MethodOverloading{
+	public int add(int x, int y) {
+		return x + y ;
+	}
+	
+	public int add(int x, int y , int z) {
+		return x + y + z ;		
+	}
+	
+	public double add(double dx, int y ) {
+		return dx + y ;		
+	}
+	
+	public double add(int x, double dx ) {
+		return x + dx ;
+	}
+	
+	public double add(double dx, double dy ) {
+		return dx + dy ;		
+	}
+	
+}
+
+
+
+public class MethodOverloadingExam {
+
+	public static void main(String[] args) {
+		
+		MethodOverloading mo = new MethodOverloading();
+		mo.add(10,15);
+		mo.add(10,15,7);
+		mo.add(13.2,15);
+
+	}
+
+}

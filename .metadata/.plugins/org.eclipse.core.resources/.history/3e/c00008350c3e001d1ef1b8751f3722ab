@@ -1,0 +1,17 @@
+package inheritanceExam;
+
+public class Animal {
+	String eye;
+	String mouth;
+	String name;
+	public void eat() {
+		
+	}
+	public void sleep() {
+		
+	}
+	
+	public void cry() {
+		System.out.println("동물의 울음 소리");
+	}
+}

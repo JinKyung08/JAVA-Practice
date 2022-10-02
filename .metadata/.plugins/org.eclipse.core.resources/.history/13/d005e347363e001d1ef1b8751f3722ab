@@ -1,0 +1,11 @@
+package polymorphism;
+
+public class CastingExam01 {
+
+	public static void main(String[] args) {
+		CastA ca = new CastA();
+		System.out.println(ca.m);
+		ca.showA();
+	}
+
+}

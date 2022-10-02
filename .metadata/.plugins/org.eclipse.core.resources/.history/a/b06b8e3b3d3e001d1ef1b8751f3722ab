@@ -1,0 +1,30 @@
+package polymorphism.exam;
+
+public class AnimalExam {
+
+	public static void main(String[] args) {
+		Animal ani = new Animal();
+		Dog dog = new Dog();
+		Cat cat = new Cat();
+		Bird bird = new Bird();
+		
+		ani.cry();
+		dog.cry();
+		dog.running();
+		
+		cat.cry();
+		cat.jump();
+		
+		bird.cry();
+		bird.fly();
+		
+		System.out.println();
+		
+		//모두 부모타입에 담기
+		Animal aniDog = new Dog();
+		Animal aniCat = new Cat();
+		Animal aniBird = new Bird();
+		
+	}
+
+}

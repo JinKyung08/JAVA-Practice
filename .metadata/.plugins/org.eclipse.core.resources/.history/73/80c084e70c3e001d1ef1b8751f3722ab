@@ -1,0 +1,21 @@
+package inheritanceExam;
+
+public class Bird {
+	String eye;
+	String mouth;
+	String name;
+	String wings;
+	public void eat() {
+		System.out.println("부리로 모이를 먹는다.");
+	}
+	public void sleep() {
+		System.out.println("새는 나무 위에서 잔다.");
+	}
+	public void cry() {
+		System.out.println("새는 짹짹 운다.");
+	}
+	public void fly() {
+		System.out.println("새가 날아간다");
+	}
+	
+}

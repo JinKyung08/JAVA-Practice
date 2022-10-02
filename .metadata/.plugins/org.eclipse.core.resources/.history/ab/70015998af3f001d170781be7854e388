@@ -1,0 +1,144 @@
+package bankExam;
+
+import java.util.Scanner;
+
+public class BankExamMain {
+		
+	//객체 생성
+	private static BankExam [] bankArray = new BankExam[100];
+	private static Scanner scan = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		
+		 //입력받기
+		while(true) {
+			int num = 0; //입력할번호
+			
+			System.out.println("---------------------------------------------------");
+			System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료 ");
+			System.out.println("---------------------------------------------------");
+			System.out.println("선택하세요>>");
+			
+			num = scan.nextInt();
+			
+			if(num == 1) {
+				createAcc();
+			} else if (num == 2) {
+				accList();
+			} else if (num == 3) {
+				deposit();
+			} else if (num == 4) {
+				withdraw();
+			} else if (num == 5) {
+				System.out.println("종료되었습니다.");
+				break;
+			}
+		}
+	 
+    }
+		
+		//1. 계좌생성
+		private static void createAcc() {
+			
+			System.out.println("----------");
+			System.out.println(" 계좌생성 ");
+			System.out.println("----------");
+			
+			//정보입력
+			System.out.println("계좌번호 : ");
+			String accountNum = scan.next();
+			System.out.println("예금주 :");
+			String name = scan.next();
+			System.out.println("초기입금액 :");
+			int saving = scan.nextInt();
+			
+			BankExam newAcc = new BankExam(accountNum, name, saving);
+			for(int i=0; i<bankArray.length; i++) {
+				if(bankArray[i] == null) {
+					bankArray[i] = newAcc;
+					System.out.println("계좌가 생성되었습니다.");
+					break;
+				}
+			}
+		
+		}
+		
+		// 2. 계좌목록
+		private static void accList() {
+			
+			System.out.println("----------");
+			System.out.println("계좌목록");
+			System.out.println("----------");
+//			System.out.print("계좌번호\t예금주\t예금액\n ");
+			
+			for(int i=0; i<bankArray.length; i++) {
+					BankExam acc = bankArray[i];
+					if(acc != null) {
+						System.out.printf(acc.getAccountNum()+"\t"+acc.getName()+"\t"+acc.getSaving()+"\n");
+					}
+			  }
+			
+		}
+		//findAcc 
+		private static BankExam findAcc (String accountNum) {
+			BankExam acc =null;
+				for(int i=0; i <bankArray.length; i++) {
+					if(bankArray[i]!=null) {
+						String dbAcc = bankArray[i].getAccountNum();
+						if (dbAcc.equals(dbAcc)) {
+							acc =bankArray[i];
+							break;
+						}
+					}
+			}
+				
+				return acc;
+		}
+		
+		
+		
+		//3. 예금
+		private static void deposit() {
+			
+			System.out.println("----------");
+			System.out.println("예금");
+			System.out.println("----------");
+			System.out.println("계좌번호");
+			String accountNum = scan.next();
+			System.out.println("예금액");
+			int money = scan.nextInt();
+					
+			BankExam acc = findAcc(accountNum);
+			if(acc == null) {
+				System.out.println("계좌가 없습니다.");
+				return;
+			}
+			acc.setSaving(acc.getSaving()+money);
+			System.out.println("예금이 성공되었습니다.");
+		}
+		
+		//4. 출금
+		private static void withdraw() {
+			
+			System.out.println("----------");
+			System.out.println("출금");
+			System.out.println("----------");
+			System.out.println("계좌번호");
+			String accountNum = scan.next();
+			System.out.println("출금액 ");
+			int money = scan.nextInt();
+			
+			BankExam acc = findAcc(accountNum);
+			if(acc == null) {
+				System.out.println("계좌가 없습니다.");
+				return;
+			}
+			acc.setSaving(acc.getSaving()-money);
+			System.out.println("출금이 성공되었습니다.");
+		}
+		
+		
+		
+	
+} // end of class

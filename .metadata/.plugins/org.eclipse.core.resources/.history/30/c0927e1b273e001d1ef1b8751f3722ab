@@ -1,0 +1,60 @@
+package inheritanceExam;
+
+public class Student {
+// 학번, 이름, 나이 - private
+	private String ssn;  //공통으로 값을 주고 싶을 때 = "123"; //  외부에서 접근 X, 내부에서는 자유롭게 접근 가능
+	private String name ; //= "홍길동";
+	private int age;      //=20;
+	
+// 생성자를 통해 초기화 
+//	public Student() {
+//		ssn = "123";		
+//		name = "홍길동";
+//		age = 20;
+		
+//		this.ssn = "123";		//구분가능할 때 this 안적어도됨
+//		this.name = "홍길동";
+//		this.age = 20;
+//	}
+	public Student() {
+		//초기 설정 사항들을 만들어줌
+	}
+	public Student(String ssn, String name, int age) {
+		super();   // 부모생성자 호출 / 생략하면 컴파일러가 자동으로 호출함
+		this.ssn = ssn;
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getSsn() {
+		return ssn;
+	}
+
+	public void setSsn(String ssn) {
+		//유효성 검사 - 매개값으로 들어온 학번이 유효한지 안한지 확인
+//		if() {}
+		this.ssn = ssn;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+	
+// 메서드 => 학번과 이름과 나이가 출력
+	
+
+}

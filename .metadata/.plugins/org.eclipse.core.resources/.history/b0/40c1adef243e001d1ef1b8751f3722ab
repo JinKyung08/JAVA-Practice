@@ -1,0 +1,18 @@
+package inheritanceExam;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+
+		Student std1 = new Student();
+		Student std2 = new Student();
+		
+//		System.out.println(std1.age);  getter setter해야함
+		System.out.println(std1.getAge());
+		
+		
+		Student std3 = new Student ("1234","박자바",95);
+		System.out.println(std3.getName());
+	}
+
+}

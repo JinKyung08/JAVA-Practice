@@ -1,0 +1,44 @@
+package arrayExam;
+
+public class Student02 {
+//	학번(studentNumber), 학생이름(name), 성적(score)
+//	생성자 - 학번, 이름, 성적을 입력 받아 초기화
+//	학생 성적판정 - judgment(int grade)
+//	판정(judgment) 여부 "합격" / "불합격" 입니다.
+//	학생 정보 - studentInfo
+//	이름 : ~~
+//	학번 : ~~
+//	성적 : ~~
+
+	
+	String studentNum;
+	String name;
+	int score;
+	
+	public Student02(String studentNum, String name, int score) {
+		this.studentNum = studentNum;
+		this.name = name;
+		this.score = score;
+		
+	}
+	
+	public String judgment(int grade) {
+		String result = null;
+		if(grade>=60) {
+			result = "합격";
+		} else { 
+			result = "불합격";
+		}
+		 return result;
+	}
+	
+	public void studentInfo() {
+		System.out.println("학번 : " + studentNum);
+		System.out.println("이름 : " + name);
+		System.out.println("판정 : " + judgment(this.score));
+	}
+	
+	
+}
+
+

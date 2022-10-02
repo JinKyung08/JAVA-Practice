@@ -1,0 +1,8 @@
+package inheritanceExam;
+
+public class Cat extends Animal {
+
+	public void jumping() {
+		System.out.println("고양이는 띈다");
+	}
+}

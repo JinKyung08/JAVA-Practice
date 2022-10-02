@@ -1,0 +1,51 @@
+package arrayExam;
+
+import java.util.Iterator;
+
+public class ArrayExam03 {
+
+	public static void main(String[] args) {
+//		문제) 홍길동반 학생들의 성적은 다음과 같다.
+//				이것을 이용하여 총점과 평균을 구하시오.
+//				{100, 85, 96, 75, 63}
+		//변수선언
+		int[] jumsu = new int[] {100,85,96,75,63};
+		double sum=0, avg=0;
+		
+		//총점 계산
+		for(int i=0; i<jumsu.length; i++) {
+			sum += jumsu[i];
+		}
+		//평균 계산
+		avg=sum/(jumsu.length);
+		
+		//출력
+		System.out.println("총점은"+sum);
+		System.out.println("평균은"+avg);
+		
+				
+//		문제2) 다음 자료의 최댓값과 최솟값을 구하는 프로그램
+//				점수(score) { 73,83,96,20,15,64,72}
+		
+		//변수선언
+		int[] score = new int[] {73,83,96,20,15,64,72};
+		int max=0, min=0;
+		
+		//
+		for(int i=0; i<score.length; i++) {
+			if (score[i]>score[i+1]) {
+				max = score[i];
+			}else if(score[i+1]>score[i]) {
+				max = score[i+1];
+			}
+		} 
+		System.out.println(max);
+		
+		
+		
+	
+		
+		
+	} //end of ArrayExam03
+
+} // end of main

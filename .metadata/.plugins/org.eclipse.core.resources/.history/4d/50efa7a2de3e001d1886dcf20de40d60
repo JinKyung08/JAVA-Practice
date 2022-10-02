@@ -1,0 +1,14 @@
+package classGetterSetterExam;
+
+public class WeightControlMainUpdate {
+
+	public static void main(String[] args) {
+		//객체 생성
+		WeightControl[] arrayWc = new WeightControl[3];
+		
+		for(int i =0; i<arrayWc.lenfth; i++) {
+			System.out.println(arrayWc[i]);
+		}
+	}
+
+}

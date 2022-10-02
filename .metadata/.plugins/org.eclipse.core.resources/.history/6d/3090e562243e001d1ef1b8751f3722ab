@@ -1,0 +1,13 @@
+package inheritanceExam;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+
+		Student std1 = new Student();
+		Student std2 = new Student();
+		
+		
+	}
+
+}

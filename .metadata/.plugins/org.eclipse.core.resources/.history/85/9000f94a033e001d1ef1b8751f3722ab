@@ -1,0 +1,11 @@
+package packageAndimport;
+import test.ImportTest;
+
+public class ImportExam {
+
+	public static void main(String[] args) {
+		ImportTest it = new ImportTest();
+		com.mulit.test.ImportTest cit = new com.mulit.test.ImportTest();
+	}
+
+}

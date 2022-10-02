@@ -1,0 +1,13 @@
+package arrayExam;
+
+public class CarTest01 {
+	//특성 속성 ( 제조사, 모델명, 색상, 최대속력)
+	//필드
+	String man ;
+	String modelName ;
+	String color;
+	int speed ;
+	
+	//생성자
+	public Car
+}
