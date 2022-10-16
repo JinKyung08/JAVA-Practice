@@ -1,9 +1,0 @@
-package test;
-
-public class ImportTest {
-	String name;
-	
-	public void show() {
-		System.out.println("import연습");
-	}
-}

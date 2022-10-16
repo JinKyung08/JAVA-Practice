@@ -14,7 +14,8 @@ public class PrintTest {
 		System.out.println(10 + 20 + "가");
 		System.out.println("가" + 10 + 20);
 		System.out.println("가" + (10 + 20)); //가30 ()가 연산자 우선순위가 높음
-		
+	
+
 	}
 
 }

@@ -14,6 +14,7 @@ public class CalculatorExam {
 				int result = cal1.division(10,30);
 				cal1.powerOff();
 				
+				
 				System.out.println(cal2.avg(5, 7));
 				
 				System.out.println(cal3.multiplication(5, 2, 6));

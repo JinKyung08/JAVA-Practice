@@ -1,8 +1,0 @@
-package polymorphism.exam;
-
-public class Dog extends Animal{
-	@Override
-	void cry() {
-		System.out.println("강아지는 멍멍");
-	}
-}

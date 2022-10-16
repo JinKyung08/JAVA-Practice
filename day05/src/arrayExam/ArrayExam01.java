@@ -28,6 +28,7 @@ public class ArrayExam01 {
 	// === 아래 내용은 서로 비교하면서 보기	
 		for(int i=0; i<num.length; i++) {
 			System.out.println("num["+ i + "]" + num[i]);
+			
 		}
 		
 		//확인만 - 문자열형태로 확인 Arrays.toString()
